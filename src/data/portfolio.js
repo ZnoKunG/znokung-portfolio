@@ -17,7 +17,7 @@ export default [
     },
     {
         title: 'FindMyMines',
-        videoUrl: 'src/assets/findmymines.mkv',
+        videoUrl: 'src/assets/findmymines.mp4',
         stack: ['Unity', 'C#', 'Socket Programming'],
         link: '',
         detail: {

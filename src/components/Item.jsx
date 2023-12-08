@@ -7,7 +7,7 @@ function Item({ title, videoUrl, stack, link, detail }) {
                 <button className="btn" onClick={() => document.getElementById(detail.gameName).showModal()}>
                     <video
                     className='w-full h-36 md:h-48 object-cover cursor-pointer' autoPlay loop muted> 
-                    <source src={videoUrl}/> 
+                    <source src={videoUrl} type='video/mp4'/> 
                     Your browser does not support the video tag.
                     </video>
                 </button>
