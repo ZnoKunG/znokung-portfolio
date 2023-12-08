@@ -32,7 +32,7 @@ export default [
     },
     {
         title: 'Every Second Count',
-        videoUrl: './public/assets/ESC_1.mp4',
+        videoUrl: './assets/ESC_1.mp4',
         stack: ['Unity', 'C#', 'Shader Graph'],
         link: '',
         detail: {
