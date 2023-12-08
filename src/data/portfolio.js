@@ -1,7 +1,7 @@
 export default [
     {
         title: 'Anachronic',
-        videoUrl: './public/assets/anachronic.mp4',
+        videoUrl: './assets/anachronic.mp4',
         stack: ['Unity', 'C#'],
         link: '',
         detail: {
@@ -17,7 +17,7 @@ export default [
     },
     {
         title: 'FindMyMines',
-        videoUrl: './public/assets/findmymines.mp4',
+        videoUrl: './assets/findmymines.mp4',
         stack: ['Unity', 'C#', 'Socket Programming'],
         link: '',
         detail: {
