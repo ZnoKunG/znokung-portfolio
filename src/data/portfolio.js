@@ -1,7 +1,7 @@
 export default [
     {
         title: 'Anachronic',
-        videoUrl: 'src/assets/anachronic.mp4',
+        videoUrl: './public/assets/anachronic.mp4',
         stack: ['Unity', 'C#'],
         link: '',
         detail: {
@@ -17,7 +17,7 @@ export default [
     },
     {
         title: 'FindMyMines',
-        videoUrl: 'src/assets/findmymines.mp4',
+        videoUrl: './public/assets/findmymines.mp4',
         stack: ['Unity', 'C#', 'Socket Programming'],
         link: '',
         detail: {
@@ -32,7 +32,7 @@ export default [
     },
     {
         title: 'Every Second Count',
-        videoUrl: 'src/assets/ESC_1.mp4',
+        videoUrl: './public/assets/ESC_1.mp4',
         stack: ['Unity', 'C#', 'Shader Graph'],
         link: '',
         detail: {
