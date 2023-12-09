@@ -2,7 +2,7 @@ export default [
     {
         title: 'Anachronic',
         videoUrl: './assets/anachronic.mp4',
-        stack: ['Unity', 'C#'],
+        stack: ['Unity', 'C#', 'Tilemap Editor'],
         link: '',
         detail: {
             gameName: 'Anachronic',
@@ -10,7 +10,7 @@ export default [
             projectType: 'Personal Game Project',
             contribution: [
                 'Implemented Character Movement Controller',
-                'Time-Control Power System',
+                'Implemented Time-Control Power System',
                 'Designed levels and received feedbacks from team members and testers',
                 'Contributing the project using Agile Methodology',],
         }
@@ -42,7 +42,7 @@ export default [
             contribution: ['Created FPS Game with the team of eight members in GRDC',
                 'Implemented enemy mechanics including patrolling in the level, shooting in range',
                 'Implemented boss mechanics with multiple phases',
-                'Created VFX using Shader Graph in Unity'],
+                'Created Barrier VFX using Shader Graph in Unity'],
         }
     },
 ]
