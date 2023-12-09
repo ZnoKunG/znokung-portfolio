@@ -44,7 +44,7 @@ function ItemVideo({ title, imgUrl, videoUrl, stack, link, linkMessage, detail }
                     Your browser does not support the video tag.
                     </video> :
                     <img src={imgUrl}
-                    className='w-full h-80 md:h-96 object-cover cursor-pointer border-2 border-stone-900 dark:border-white'> 
+                    className='w-full h-80 md:h-96 object-cover cursor-pointer mb-4 border-2 border-stone-900 dark:border-white rounded-md'> 
                     </img> }
                     <h1 className='text-base md:text-lg text-gray-600 dark:text-gray-200 mb-3 md:mb-3 font-bold'>{detail.responsibilty}</h1>
                     <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm'>

@@ -33,7 +33,7 @@ function ItemImg({ title, imgUrl, stack, link, detail }) {
                     <h1 className='text-2xl md:text-4xl mb-1 md:mb-1 font-bold dark:text-white'>{detail.gameName}</h1>
                     <p className='text-base md:text-xl mb-5 font-medium dark:text-stone-200'>{detail.workplace}</p>
                     <img src={imgUrl}
-                    className='w-full h-80 md:h-96 object-cover cursor-pointer border-2 border-stone-900 dark:border-white'> 
+                    className='w-full h-80 md:h-96 mb-4 object-cover cursor-pointer border-2 border-stone-900 dark:border-white rounded-md'> 
                     </img>
                     <h1 className='text-base md:text-lg text-gray-600 dark:text-gray-200 mb-3 mt-3 md:mb-3 font-bold'>{detail.responsibilty}</h1>
                     <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm'>
