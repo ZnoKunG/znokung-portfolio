@@ -3,6 +3,7 @@ import Intro from './components/Intro';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Experience from './components/Experience';
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -63,13 +64,14 @@ function App() {
   
   return (
     <>
-      <button type='btn' onClick={handleThemeSwitch} className='fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md'>
+      <button type='btn' onClick={handleThemeSwitch} className='fixed p-2 z-10 right-4 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md'>
         {theme =='dark' ? sun : moon}
       </button>
       <div className='bg-stone-200 dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter'>
         <div className='max-w-5xl w-11/12 mx-auto'>
           <Intro />
           <Project />
+		  <Experience />
           <Contact />
           <Footer />
         </div>
