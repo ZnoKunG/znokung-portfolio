@@ -1,8 +1,8 @@
-# React + Vite
+# Kittaphot's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A react and vite web development using tailwindcss. The portfolio includes game projects and web developments. See the portfolio >> https://znokung.github.io/znokung-portfolio/
 
-Currently, two official plugins are available:
+# About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Email: zno.ksy@gmail.com
+- LinkedIn: https://www.linkedin.com/in/kittaphot-saeng/
