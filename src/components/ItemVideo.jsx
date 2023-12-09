@@ -1,15 +1,19 @@
 import React from 'react';
 
-function ItemVideo({ title, videoUrl, stack, link, linkMessage, detail }) {
+function ItemVideo({ title, imgUrl, videoUrl, stack, link, linkMessage, detail }) {
     return (
         <div>
             <div className='border-2 border-stone-900 dark:border-white rounded-md overflow-hidden'>
                 <button className="btn" onClick={() => document.getElementById(detail.gameName).showModal()}>
+                    {videoUrl != '' ?
                     <video
                     className='w-full h-36 md:h-48 object-cover cursor-pointer' autoPlay loop muted> 
                     <source src={videoUrl} type='video/mp4'/> 
                     Your browser does not support the video tag.
-                    </video>
+                    </video> :
+                    <img src={imgUrl}
+                    className='w-full h-36 md:h-48 object-cover cursor-pointer'> 
+                    </img> }
                 </button>
                 <div className='w-full p-4'>
                     <h3 className='text-lg dark:text-white md:text-xl mb-2 md:mb-3 font-semibold'>{title}</h3>
@@ -34,11 +38,14 @@ function ItemVideo({ title, videoUrl, stack, link, linkMessage, detail }) {
                 <div className="flex items-center justify-center flex-col text-center">
                     <h1 className='text-2xl md:text-4xl mb-1 md:mb-1 font-bold dark:text-white'>{detail.gameName}</h1>
                     <p className='text-base md:text-xl mb-5 font-medium dark:text-stone-200'>{detail.projectType}</p>
-                    <video
+                    {videoUrl != '' ? <video
                     className='w-full h-80 md:h-96 object-cover cursor-pointer mb-4 border-2 border-stone-900 dark:border-white rounded-md' autoPlay loop muted> 
                     <source src={videoUrl}/> 
                     Your browser does not support the video tag.
-                    </video>
+                    </video> :
+                    <img src={imgUrl}
+                    className='w-full h-80 md:h-96 object-cover cursor-pointer border-2 border-stone-900 dark:border-white'> 
+                    </img> }
                     <h1 className='text-base md:text-lg text-gray-600 dark:text-gray-200 mb-3 md:mb-3 font-bold'>{detail.responsibilty}</h1>
                     <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm'>
                         {stack.map(item => (

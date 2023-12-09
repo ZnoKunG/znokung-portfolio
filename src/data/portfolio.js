@@ -1,6 +1,7 @@
 export default [
     {
         title: 'Anachronic',
+        imgUrl: '',
         videoUrl: './assets/anachronic.mp4',
         stack: ['Unity', 'C#', 'Tilemap Editor'],
         link: 'https://yonderu.itch.io/anachronic',
@@ -19,6 +20,7 @@ export default [
     },
     {
         title: 'FindMyMines',
+        imgUrl: '',
         videoUrl: './assets/findmymines.mp4',
         stack: ['Unity', 'C#', 'Socket Programming'],
         link: 'https://bitbucket.org/netcentric/findmymines/src/master/',
@@ -35,6 +37,7 @@ export default [
     },
     {
         title: 'Every Second Count',
+        imgUrl: '',
         videoUrl: './assets/ESC_1.mp4',
         stack: ['Unity', 'C#', 'Shader Graph'],
         link: 'https://chulagrdc.itch.io/esc-every-second-counts',
@@ -47,6 +50,57 @@ export default [
                 'Implemented enemy mechanics including patrolling in the level, shooting in range',
                 'Implemented boss mechanics with multiple phases',
                 'Created Barrier VFX using Shader Graph in Unity'],
+        }
+    },
+    {
+        title: 'FSweeper',
+        imgUrl: '',
+        videoUrl: './assets/fsweeper.mp4',
+        stack: ['Unity', 'C#'],
+        link: 'https://github.com/ZnoKunG/fsweeper-unity',
+        linkMessage: 'See Github Repo',
+        detail: {
+            gameName: 'FSweeper',
+            responsibilty: 'Gameplay Programmer',
+            projectType: 'Personal Game Project',
+            contribution: ['Developed a minesweeper clone game',
+            'Implemented Grid class which can contain any type of objects and can be used in any project required grid system',
+                'Implemented game logics while maintaining clean structures using Object-Oriented Programming',
+                'Send the score when the game is over and display leaderboard requesting data from API using UnityWebRequest',],
+            }
+    },
+    {
+        title: 'FSweeper API',
+        imgUrl: './assets/fsweeper-api.png',
+        videoUrl: '',
+        stack: ['.NET', 'MongoDB', 'Azure Server'],
+        link: 'https://github.com/ZnoKunG/fsweeper-api',
+        linkMessage: 'See Github Repo',
+        detail: {
+            gameName: 'FSweeper API',
+            responsibilty: 'Backend Developer',
+            projectType: 'Personal Backend Project',
+            contribution: ['Developed API in .NET using MCV pattern',
+            'Connected to MongoDB database cloud to store player\'s data',
+            'Implemented the service for players to request and update player\'s data',
+            'Hosted the server on Azure Server which anyone can connect to the .NET server (Currently not available sorry for inconvenience)'],
+        }
+    },
+    {
+        title: 'Horror Game: Repaired',
+        imgUrl: '',
+        videoUrl: './assets/repaired.mp4',
+        stack: ['Unreal Engine', 'Blueprint'],
+        link: 'https://znokung.itch.io/horror-game-repaired',
+        linkMessage: 'Play the game',
+        detail: {
+            gameName: 'Horror Game: Repaired',
+            responsibilty: 'Gameplay Programmer & Game Designer',
+            projectType: 'Personal Game Project',
+            contribution: ['Developed a horror game in two weeks using Unreal Engine 5',
+                'Implemented game events that trigger when passing a door, after looking at certain object, complete certain objective',
+                'Implemented different ghost behaviour with patrol mechanic using AI Navigation Tool',
+                'Used Modular Level Design to design levels with the assets from 3D modeler'],
         }
     },
 ]
