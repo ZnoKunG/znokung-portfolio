@@ -44,7 +44,7 @@ function ItemImg({ title, imgUrl, stack, link, detail }) {
                         ))}
                     </p>
                 </div>
-                <h1 className='text-xl md:text-2xl mb-3 md:mb-3 font-bold dark:text-white'>Project Contribution</h1>
+                <h1 className='text-xl md:text-2xl mt-6 mb-3 md:mb-3 md:mt-6 font-bold dark:text-white'>Project Contribution</h1>
                 <ul className='list-inside text-gray-600 dark:text-gray-200 list-disc'>
                     {detail.contribution.map(contribute => (
                         <li className='text-base md:text-xl mb-1 font-medium'>
