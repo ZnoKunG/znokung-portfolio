@@ -83,7 +83,7 @@ export default [
             contribution: ['Developed API in .NET using MCV pattern',
             'Connected to MongoDB database cloud to store player\'s data',
             'Implemented the service for players to request and update player\'s data',
-            'Hosted the server on Azure Server which anyone can connect to the .NET server (Currently not available sorry for inconvenience)'],
+            'Hosted the server on Azure Server which anyone can connect to the .NET server (currently not available)'],
         }
     },
     {
