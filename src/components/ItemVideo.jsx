@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ItemVideo({ title, videoUrl, stack, link, detail }) {
+function ItemVideo({ title, videoUrl, stack, link, linkMessage, detail }) {
     return (
         <div>
             <div className='border-2 border-stone-900 dark:border-white rounded-md overflow-hidden'>
@@ -35,7 +35,7 @@ function ItemVideo({ title, videoUrl, stack, link, detail }) {
                     <h1 className='text-2xl md:text-4xl mb-1 md:mb-1 font-bold dark:text-white'>{detail.gameName}</h1>
                     <p className='text-base md:text-xl mb-5 font-medium dark:text-stone-200'>{detail.projectType}</p>
                     <video
-                    className='w-full h-80 md:h-96 object-cover cursor-pointer mb-4' autoPlay loop muted> 
+                    className='w-full h-80 md:h-96 object-cover cursor-pointer mb-4 border-2 border-stone-900 dark:border-white rounded-md' autoPlay loop muted> 
                     <source src={videoUrl}/> 
                     Your browser does not support the video tag.
                     </video>
@@ -51,11 +51,14 @@ function ItemVideo({ title, videoUrl, stack, link, detail }) {
                 <h1 className='text-xl md:text-2xl mt-6 mb-3 md:mb-3 md:mt-6 font-bold dark:text-white'>Project Contribution</h1>
                 <ul className='list-inside text-gray-600 dark:text-gray-200 list-disc'>
                     {detail.contribution.map(contribute => (
-                        <li className='text-base md:text-xl mb-1 font-medium'>
+                        <li className='text-base md:text-lg mb-1 font-medium'>
                             {contribute}
                         </li>
                     ))}
                 </ul>
+                <a href={link} target="_blank" rel="noopener noreferrer" className='inline-block mt-5 mb-3 px-4 py-2 bg-stone-700 dark:bg-white font-semibold text-white dark:text-stone-700 rounded-md'>
+                    {linkMessage}
+                </a>
             </dialog>
         </div>
 

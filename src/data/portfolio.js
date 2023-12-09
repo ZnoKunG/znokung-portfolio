@@ -3,7 +3,8 @@ export default [
         title: 'Anachronic',
         videoUrl: './assets/anachronic.mp4',
         stack: ['Unity', 'C#', 'Tilemap Editor'],
-        link: '',
+        link: 'https://yonderu.itch.io/anachronic',
+        linkMessage: 'Play the game',
         detail: {
             gameName: 'Anachronic',
             responsibilty: 'Gameplay Programmer & Game Designer',
@@ -11,6 +12,7 @@ export default [
             contribution: [
                 'Implemented Character Movement Controller',
                 'Implemented Time-Control Power System',
+                'Implemented Player Clone Power that records player incoming inputs every frame',
                 'Designed levels and received feedbacks from team members and testers',
                 'Contributing the project using Agile Methodology',],
         }
@@ -19,7 +21,8 @@ export default [
         title: 'FindMyMines',
         videoUrl: './assets/findmymines.mp4',
         stack: ['Unity', 'C#', 'Socket Programming'],
-        link: '',
+        link: 'https://bitbucket.org/netcentric/findmymines/src/master/',
+        linkMessage: 'See Github Repo',
         detail: {
             gameName: 'FindMyMines',
             responsibilty: 'Full Stack Developer & Project Manager',
@@ -34,7 +37,8 @@ export default [
         title: 'Every Second Count',
         videoUrl: './assets/ESC_1.mp4',
         stack: ['Unity', 'C#', 'Shader Graph'],
-        link: '',
+        link: 'https://chulagrdc.itch.io/esc-every-second-counts',
+        linkMessage: 'Play the game',
         detail: {
             gameName: 'Every Second Count',
             responsibilty: 'Gameplay Programmer',

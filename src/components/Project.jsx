@@ -14,6 +14,7 @@ function Project() {
                             title={project.title}
                             stack={project.stack}
                             link={project.link}
+                            linkMessage={project.linkMessage}
                             detail={project.detail}
                         />
                     ))}
