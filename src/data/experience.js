@@ -34,7 +34,7 @@ export default [
     },
     {
         title: 'Patient Safety PlayShare',
-        imgUrl: './assets/esc.png',
+        imgUrl: './assets/gametest.jpg',
         stack: ['VR', 'Microsoft Excel'],
         link: '',
         detail: {
