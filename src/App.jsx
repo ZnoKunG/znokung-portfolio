@@ -10,11 +10,11 @@ function App() {
 
   useEffect(() => {
 		setTheme('dark');
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			setTheme('dark');
-		} else {
-			setTheme('light');
-		}
+		// if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		// 	setTheme('dark');
+		// } else {
+		// 	setTheme('light');
+		// }
 	}, []);
 
 	const handleThemeSwitch = () => {
