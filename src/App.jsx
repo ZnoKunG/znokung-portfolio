@@ -9,6 +9,7 @@ function App() {
   const [theme, setTheme] = useState(null);
 
   useEffect(() => {
+		setTheme('dark');
 		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 			setTheme('dark');
 		} else {
