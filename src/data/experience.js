@@ -10,7 +10,7 @@ export default [
             workplace: 'Jumbo Jumps Co., Ltd. (True Axion Interactive Co., Ltd.)',
             contribution: [
                 'Worked on Agile Methodology including daily meeting, and sprint review for the game',
-                'Worked on the flow of version control in the company using Git and Sourcetree',
+                'Worked on the flow of version control in the company using Git, Sourcetree, and BitBucket',
                 'Developed different quick prototypes to test ideas from game designer',
                 'Maintained and Developed Clean Code Structure along with Object-Oriented Programming in the project',
                 'Communicating with game designers and developers to have shared understanding on the task',
@@ -27,7 +27,7 @@ export default [
             responsibilty: 'Intern Full Stack Developer',
             workplace: 'Jumbo Jumps Co., Ltd. (True Axion Interactive Co., Ltd.)',
             contribution: ['Worked on Agile Methodology including daily meeting, and sprint review for the game',
-                'Worked on the flow of version control in the company using Git and Sourcetree',
+                'Worked on the flow of version control in the company using Git, Sourcetree, and BitBucket',
                 'Created API services for incoming request from the front-end using .NET with CQRS Pattern',
                 'Created Admin Tool using Angular Framework'],
         }
