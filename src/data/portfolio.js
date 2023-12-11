@@ -103,4 +103,21 @@ export default [
                 'Used Modular Level Design to design levels with the assets from 3D modeler'],
         }
     },
+    {
+        title: 'SFML Collision Showcase',
+        imgUrl: '',
+        videoUrl: './assets/sfml.mp4',
+        stack: ['C++', 'SFML'],
+        link: 'https://znokung.itch.io/horror-game-repaired',
+        linkMessage: 'See Github Repo',
+        detail: {
+            gameName: 'SFML Collision Showcase',
+            responsibilty: 'Programmer',
+            projectType: 'Personal Game Project',
+            contribution: ['Developed a collision showcase with multiple shapes using C++ and SFML',
+                'Shapes collide with the window border and other shapes',
+                'Created Shape class that contains shape text and any shape (can create this class to be either Rectangle or Circle)',
+                'Load config file from local machine to customize window size, text properties, and what type of shapes and its properties we want to create'],
+        }
+    },
 ]
