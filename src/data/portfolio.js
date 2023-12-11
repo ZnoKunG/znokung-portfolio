@@ -104,14 +104,14 @@ export default [
         }
     },
     {
-        title: 'SFML Collision Showcase',
+        title: 'SFML Collision Demo',
         imgUrl: '',
         videoUrl: './assets/sfml.mp4',
         stack: ['C++', 'SFML'],
-        link: 'https://znokung.itch.io/horror-game-repaired',
+        link: 'https://github.com/ZnoKunG/sfml-collision',
         linkMessage: 'See Github Repo',
         detail: {
-            gameName: 'SFML Collision Showcase',
+            gameName: 'SFML Collision Demo',
             responsibilty: 'Programmer',
             projectType: 'Personal Game Project',
             contribution: ['Developed a collision showcase with multiple shapes using C++ and SFML',
