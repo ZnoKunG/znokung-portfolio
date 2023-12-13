@@ -120,4 +120,26 @@ export default [
                 'Load config file from local machine to customize window size, text properties, and what type of shapes and its properties we want to create'],
         }
     },
+    {
+        title: 'SFML Geometry Battles',
+        imgUrl: '',
+        videoUrl: './assets/sfml-engine.mp4',
+        stack: ['C++', 'SFML', 'ECS'],
+        link: 'https://github.com/ZnoKunG/sfml-geometrybattles',
+        linkMessage: 'See Github Repo',
+        detail: {
+            gameName: 'SFML Geometry Battles',
+            responsibilty: 'Programmer',
+            projectType: 'Personal Game Project',
+            contribution: ['Developed a 2D shooting game engine using C++ and SFML',
+                'Implemented engine structure using ECS architecture',
+                'Load config file from local machine to customize player, enemy, bullet, and special skill properties',
+                'Spawn enemy at certain period with random position, color, direction, and vertices',
+                'Implemented collision detection on each pair of entities. For example, collision between bullet and enemy will give us the score',
+                'Separated between the system which implements the logic and component which only contains pure data',
+                'Implemented EntityManager which contains addEntity, removeEntity, and getEntities provided to system',
+                'Implemented special skill which travels to the mouse position and explodes after certain period',
+                'When enemy is dead, (vertice amount) of small enemies will be spawned and get more score if it is eliminated'],
+        }
+    }
 ]
