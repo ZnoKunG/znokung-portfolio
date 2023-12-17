@@ -97,7 +97,7 @@ export default [
             gameName: 'Horror Game: Repaired',
             responsibilty: 'Gameplay Programmer & Game Designer',
             projectType: 'Personal Game Project',
-            contribution: ['Developed a horror game in two weeks using Unreal Engine 5',
+            contribution: ['Developed a horror game in two weeks using Unreal Engine 5 with Blueprint (Visual Scripting)',
                 'Implemented game events that trigger when passing a door, after looking at certain object, complete certain objective',
                 'Implemented different ghost behaviour with patrol mechanic using AI Navigation Tool',
                 'Used Modular Level Design to design levels with the assets from 3D modeler'],
