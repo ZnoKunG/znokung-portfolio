@@ -13,6 +13,8 @@ export default [
                 'Worked on the flow of version control in the company using Git, Sourcetree, and BitBucket',
                 'Developed different quick prototypes to test ideas from game designer',
                 'Maintained and Developed Clean Code Structure along with Object-Oriented Programming in the project',
+                'Use Timeline tool to create cutscenes and send the signal to call functions',
+                'Use Scriptable Objects to change game balancing from Game Designer',
                 'Communicating with game designers and developers to have shared understanding on the task',
                 'Taking feedbacks and discussing to find the best method from game directors and senior developers'],
         }

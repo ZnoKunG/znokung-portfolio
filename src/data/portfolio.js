@@ -115,7 +115,7 @@ export default [
             responsibilty: 'Programmer',
             projectType: 'Personal Game Project',
             contribution: ['Developed a collision showcase with multiple shapes using C++ and SFML',
-                'Shapes collide with the window border and other shapes',
+                'Shapes collide with the window border and other shapes using AABB Collision Detection',
                 'Created Shape class that contains shape text and any shape (can create this class to be either Rectangle or Circle)',
                 'Load config file from local machine to customize window size, text properties, and what type of shapes and its properties we want to create'],
         }
