@@ -141,5 +141,23 @@ export default [
                 'Implemented special skill which travels to the mouse position and explodes after certain period',
                 'When enemy is dead, (vertice amount) of small enemies will be spawned and get more score if it is eliminated'],
         }
+    },
+    {
+        title: 'Graphing Demo',
+        imgUrl: '',
+        videoUrl: './assets/graphing.mp4',
+        stack: ['Unity', 'HLSL', 'Compute Shader'],
+        link: 'https://github.com/ZnoKunG/unity-graphing',
+        linkMessage: 'See Github Repo',
+        detail: {
+            gameName: 'Graphing Demo',
+            responsibilty: 'Programmer',
+            projectType: 'Personal Game Project',
+            contribution: ['Comparison between calculation positions on CPU and GPU',
+                'Implemented position calculation with different graphs including sin wave, sphere, and torus',
+                'Optimized GPU using multithreads to calculate 2-D Vector',
+                'Minimized data transfers between CPU and GPU by calculating positions and draw the shape from the GPU'
+            ],
+        }
     }
 ]
