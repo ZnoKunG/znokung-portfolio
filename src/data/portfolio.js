@@ -145,7 +145,7 @@ export default [
     },
     {
         title: 'Wangjung: Mobile Application',
-        imgUrl: './assets/wangjung.jpg',
+        imgUrl: './assets/wangjung.png',
         videoUrl: '',
         stack: ['Typescript', 'React Native', 'NestJS', 'TypeORM', 'Docker'],
         link: 'https://github.com/ZnoKunG/wangchan_fe',
