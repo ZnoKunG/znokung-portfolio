@@ -87,23 +87,6 @@ export default [
         }
     },
     {
-        title: 'Horror Game: Repaired',
-        imgUrl: '',
-        videoUrl: './assets/repaired.mp4',
-        stack: ['Unreal Engine', 'Blueprint'],
-        link: 'https://znokung.itch.io/horror-game-repaired',
-        linkMessage: 'Play the game',
-        detail: {
-            gameName: 'Horror Game: Repaired',
-            responsibilty: 'Gameplay Programmer & Game Designer',
-            projectType: 'Personal Game Project',
-            contribution: ['Developed a horror game in two weeks using Unreal Engine 5 with Blueprint (Visual Scripting)',
-                'Implemented game events that trigger when passing a door, after looking at certain object, complete certain objective',
-                'Implemented different ghost behaviour with patrol mechanic using AI Navigation Tool',
-                'Used Modular Level Design to design levels with the assets from 3D modeler'],
-        }
-    },
-    {
         title: 'SFML Collision Demo',
         imgUrl: '',
         videoUrl: './assets/sfml.mp4',
@@ -159,5 +142,27 @@ export default [
                 'Minimized data transfers between CPU and GPU by calculating positions and draw the shape from the GPU'
             ],
         }
-    }
+    },
+    {
+        title: 'Wangjung: Mobile Application',
+        imgUrl: './assets/wangjung.jpg',
+        videoUrl: '',
+        stack: ['Typescript', 'React Native', 'NestJS', 'TypeORM', 'Docker'],
+        link: 'https://github.com/ZnoKunG/wangchan_fe',
+        linkMessage: 'See Github Repo',
+        detail: {
+            gameName: 'Wangjung: Mobile Application',
+            responsibilty: 'Full Stack Developer, Scrum Master',
+            projectType: 'University Game Project',
+            contribution: [
+                'Arranged scrum meeting to distribute works',
+                'Designed application architecture from the requirements',
+                'Developed Front-end mobile application on React Native',
+                'Developed Back-end services for user data access using NestJS and TypeORM to sync with database schema',
+                'Set up Docker to create work environment for local and production',
+                'Created Cloud Linux Virtual Machine to run back-end connecting with cloud-based database in MySQL',
+                'Implemented CI/CD on Github Actions to automatically publish the production on back-end',
+            ],
+        }
+    },
 ]
