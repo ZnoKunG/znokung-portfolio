@@ -144,7 +144,7 @@ export default [
         }
     },
     {
-        title: 'Wangjung: Mobile Application',
+        title: 'Wangjung: Mobile App',
         imgUrl: './assets/wangjung.png',
         videoUrl: '',
         stack: [, 'React Native', 'NestJS', 'TypeORM'],
