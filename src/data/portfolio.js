@@ -165,4 +165,22 @@ export default [
             ],
         }
     },
+    {
+        title: 'OpenGL: Basic Graphics Rendering',
+        imgUrl: '',
+        videoUrl: './assets/opengl.mp4',
+        stack: ['OpenGL', 'C++', 'GLSL'],
+        link: 'https://github.com/ZnoKunG/opengl-graphics',
+        linkMessage: 'See Github Repo',
+        detail: {
+            gameName: 'OpenGL: Basic Graphics Rendering',
+            responsibilty: 'Programmer',
+            projectType: 'Personal Game Project',
+            contribution: [
+                'Render 3D graphics with texture (Imported models or writing your own vertices)',
+                'Implement different types of light including Directional Light, Point light, Flash Light',
+                'Include 3D model importer library to import vertices and texture data to render on the screen',
+            ],
+        }
+    },
 ]
