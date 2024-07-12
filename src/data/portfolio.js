@@ -183,4 +183,21 @@ export default [
             ],
         }
     },
+    {
+        title: 'Matrix Multiplication on GPU',
+        imgUrl: './assets/cuda-matrix-multiply.png',
+        videoUrl: '',
+        stack: ['C++', 'CUDA'],
+        link: 'https://github.com/ZnoKunG/cuda-multiply-matrix',
+        linkMessage: 'See Github Repo',
+        detail: {
+            gameName: 'Matrix Multiplication on GPU',
+            responsibilty: 'Programmer',
+            projectType: 'Personal Game Project',
+            contribution: [
+                'Create CUDA application to perform matrix multiplication',
+                'Compare the computation time between GPU and CPU',
+            ],
+        }
+    },
 ]
