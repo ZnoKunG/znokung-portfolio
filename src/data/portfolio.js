@@ -184,19 +184,21 @@ export default [
         }
     },
     {
-        title: 'Matrix Multiplication on GPU',
-        imgUrl: './assets/cuda-matrix-multiply.png',
+        title: 'Fast Fourier Transform on GPU',
+        imgUrl: './assets/cuda-fft.png',
         videoUrl: '',
         stack: ['C++', 'CUDA'],
-        link: 'https://github.com/ZnoKunG/cuda-multiply-matrix',
+        link: 'https://github.com/ZnoKunG/cuda-fft',
         linkMessage: 'See Github Repo',
         detail: {
-            gameName: 'Matrix Multiplication on GPU',
+            gameName: 'Fast Fourier Transform on GPU',
             responsibilty: 'Programmer',
             projectType: 'Personal Game Project',
             contribution: [
-                'Create CUDA application to perform matrix multiplication',
-                'Compare the computation time between GPU and CPU',
+                'Create CUDA application to perform Fast Fourier Transform with Cooley-Tukey Algorithm',
+                'Compare the computation time between GPU and CPU on both DFT and FFT',
+                'This FFT algorithm only works with the vector with the size that is power of 2',
+                'Include the function to generate 0s to make the vector compatible (power of 2)'
             ],
         }
     },
