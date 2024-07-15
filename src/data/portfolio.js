@@ -166,14 +166,14 @@ export default [
         }
     },
     {
-        title: 'OpenGL: Basic Graphics Rendering',
+        title: 'OpenGL: Graphics Rendering',
         imgUrl: '',
         videoUrl: './assets/opengl.mp4',
         stack: ['OpenGL', 'C++', 'GLSL'],
         link: 'https://github.com/ZnoKunG/opengl-graphics',
         linkMessage: 'See Github Repo',
         detail: {
-            gameName: 'OpenGL: Basic Graphics Rendering',
+            gameName: 'OpenGL: Graphics Rendering',
             responsibilty: 'Programmer',
             projectType: 'Personal Game Project',
             contribution: [
