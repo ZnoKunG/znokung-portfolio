@@ -185,7 +185,7 @@ export default [
     },
     {
         title: 'Fast Fourier Transform on GPU',
-        imgUrl: './assets/cuda-fft.png',
+        imgUrl: './assets/output.png',
         videoUrl: '',
         stack: ['C++', 'CUDA'],
         link: 'https://github.com/ZnoKunG/cuda-fft',
@@ -196,9 +196,9 @@ export default [
             projectType: 'Personal Game Project',
             contribution: [
                 'Create CUDA application to perform Fast Fourier Transform with Cooley-Tukey Algorithm',
-                'Compare the computation time between GPU and CPU on both DFT and FFT',
+                'Compare the computation time between GPU and CPU on both DFT and FFT plotted in graphs',
                 'This FFT algorithm only works with the vector with the size that is power of 2',
-                'Include the function to generate 0s to make the vector compatible (power of 2)'
+                'Include the function to generate 0s to make the vector compatible (power of 2)',
             ],
         }
     },
