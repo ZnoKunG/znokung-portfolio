@@ -56,35 +56,22 @@ export default [
         title: 'FSweeper',
         imgUrl: '',
         videoUrl: './assets/fsweeper.mp4',
-        stack: ['Unity', 'C#'],
+        stack: ['Unity', 'C#', '.NET CORE'],
         link: 'https://github.com/ZnoKunG/fsweeper-unity',
         linkMessage: 'See Github Repo',
         detail: {
             gameName: 'FSweeper',
-            responsibilty: 'Gameplay Programmer',
-            projectType: 'Personal Game Project',
+            responsibilty: 'Gameplay Programmer and Backend Developer',
+            projectType: 'Personal Project',
             contribution: ['Developed a minesweeper clone game',
             'Implemented Grid class which can contain any type of objects and can be used in any project required grid system',
                 'Implemented game logics while maintaining clean structures using Object-Oriented Programming',
-                'Send the score when the game is over and display leaderboard requesting data from API using UnityWebRequest',],
+                'Send the score when the game is over and display leaderboard requesting data from API using UnityWebRequest',
+                'Developed API in .NET using MCV pattern',
+                'Connected to MongoDB database cloud to store player\'s data',
+                'Implemented the service for players to request and update player\'s data',
+                'Hosted the server on Azure Server which anyone can connect to the server integrated with MongoDB database (currently not available)'],
             }
-    },
-    {
-        title: 'FSweeper API',
-        imgUrl: './assets/fsweeper-api.png',
-        videoUrl: '',
-        stack: ['.NET', 'MongoDB', 'Azure Server'],
-        link: 'https://github.com/ZnoKunG/fsweeper-api',
-        linkMessage: 'See Github Repo',
-        detail: {
-            gameName: 'FSweeper API',
-            responsibilty: 'Backend Developer',
-            projectType: 'Personal Backend Project',
-            contribution: ['Developed API in .NET using MCV pattern',
-            'Connected to MongoDB database cloud to store player\'s data',
-            'Implemented the service for players to request and update player\'s data',
-            'Hosted the server on Azure Server which anyone can connect to the .NET server (currently not available)'],
-        }
     },
     {
         title: 'SFML Collision Demo',
@@ -96,7 +83,7 @@ export default [
         detail: {
             gameName: 'SFML Collision Demo',
             responsibilty: 'Programmer',
-            projectType: 'Personal Game Project',
+            projectType: 'Personal Project',
             contribution: ['Developed a collision showcase with multiple shapes using C++ and SFML',
                 'Shapes collide with the window border and other shapes using AABB Collision Detection',
                 'Created Shape class that contains shape text and any shape (can create this class to be either Rectangle or Circle)',
@@ -113,7 +100,7 @@ export default [
         detail: {
             gameName: 'SFML Geometry Battles',
             responsibilty: 'Programmer',
-            projectType: 'Personal Game Project',
+            projectType: 'Personal Project',
             contribution: ['Developed a 2D shooting game engine using C++ and SFML',
                 'Implemented engine structure using ECS architecture',
                 'Load config file from local machine to customize player, enemy, bullet, and special skill properties',
@@ -135,7 +122,7 @@ export default [
         detail: {
             gameName: 'Graphing Demo',
             responsibilty: 'Programmer',
-            projectType: 'Personal Game Project',
+            projectType: 'Personal Project',
             contribution: ['Comparison between calculation positions on CPU and GPU',
                 'Implemented position calculation with different graphs including sin wave, sphere, and torus',
                 'Optimized GPU using multithreads to calculate 2-D Vector',
@@ -153,7 +140,7 @@ export default [
         detail: {
             gameName: 'Wangjung: Mobile Application',
             responsibilty: 'Full Stack Developer, Scrum Master',
-            projectType: 'University Game Project',
+            projectType: 'University Project',
             contribution: [
                 'Arranged scrum meeting to distribute works',
                 'Designed application architecture from the requirements',
@@ -175,7 +162,7 @@ export default [
         detail: {
             gameName: 'OpenGL: Graphics Rendering',
             responsibilty: 'Programmer',
-            projectType: 'Personal Game Project',
+            projectType: 'Personal Project',
             contribution: [
                 'Render 3D graphics with texture (Imported models or writing your own vertices)',
                 'Implement different types of light including Directional Light, Point light, Flash Light',
@@ -184,7 +171,7 @@ export default [
         }
     },
     {
-        title: 'Fast Fourier Transform on GPU',
+        title: 'FFT on GPU',
         imgUrl: './assets/output.png',
         videoUrl: '',
         stack: ['C++', 'CUDA'],
@@ -193,7 +180,7 @@ export default [
         detail: {
             gameName: 'Fast Fourier Transform on GPU',
             responsibilty: 'Programmer',
-            projectType: 'Personal Game Project',
+            projectType: 'Personal Project',
             contribution: [
                 'Create CUDA application to perform Fast Fourier Transform with Cooley-Tukey Algorithm',
                 'Compare the computation time between GPU and CPU on both DFT and FFT plotted in graphs',
