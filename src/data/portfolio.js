@@ -189,4 +189,21 @@ export default [
             ],
         }
     },
+    {
+        title: 'Simple Compiler',
+        imgUrl: './assets/compiler.png',
+        videoUrl: '',
+        stack: ['C'],
+        link: 'https://github.com/ZnoKunG/compiler_c',
+        linkMessage: 'See Github Repo',
+        detail: {
+            gameName: 'Simple Compiler written in C',
+            responsibilty: 'Programmer',
+            projectType: 'Personal Project',
+            contribution: [
+                'A simple compiler written in C which can do the basic operation including mathematical operation, conditions, loop, and input.',
+                'Integrated Map data structure to optimize the speed of creating a variable and reading declared variables',
+            ],
+        }
+    },
 ]
