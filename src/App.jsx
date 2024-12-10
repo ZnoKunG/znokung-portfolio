@@ -65,9 +65,12 @@ function App() {
   
   return (
     <>
-	<a href='https://github.com/ZnoKunG/znokung-portfolio' target="_blank" rel="noopener noreferrer" className='fixed z-10 p-2 left-4 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md'>
-        <p className='text-sm md:text-base font-medium px-2 text-stone-200 dark:text-stone-800'>See Portfolio Repo</p>
-      </a>
+	<a href="/path-to-your-cv.pdf" download="YourName_CV.pdf" className='fixed z-10 p-2 left-4 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md'>
+		<p className='text-sm md:text-base font-medium px-2 text-stone-200 dark:text-stone-800'>
+			See my CV
+		</p>
+	</a>
+
       <button type='btn' onClick={handleThemeSwitch} className='fixed p-2 z-10 right-4 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md'>
         {theme =='dark' ? sun : moon}
       </button>
