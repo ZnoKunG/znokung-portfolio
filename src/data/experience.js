@@ -1,5 +1,19 @@
 export default [
     {
+        title: 'Quantum vs Traditional Bugs',
+        imgUrl: './assets/polytechnique.png',
+        stack: ['LaTex', 'Quantum Computing'],
+        link: 'https://moose.polymtl.ca/',
+        detail: {
+            gameName: 'Bug Characteristics in Quantum Software Ecosystem',
+            responsibilty: 'Intern Researcher',
+            workplace: 'Polytechnique Montre ́al',
+            contribution: [
+                'Contributed in reviewing the ”Bug Characteristics in Quantum Software Ecosystem” published paper.',
+                'Built a strong foundation in fundamental to quantum programming and academic publishing process, from literature review and responding to reviewers to writing paper with LaTeX and conducting experiments.'],
+        }
+    },
+    {
         title: 'Project Regulus',
         imgUrl: './assets/regulus.jpg',
         stack: ['Unity', 'C#', 'Sourcetree'],
