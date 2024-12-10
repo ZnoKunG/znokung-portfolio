@@ -2,7 +2,7 @@ export default [
     {
         title: 'Quantum vs Traditional Bugs',
         imgUrl: './assets/polytechnique.png',
-        stack: ['LaTex', 'Quantum Computing'],
+        stack: ['LaTeX', 'Quantum', 'Research'],
         link: 'https://moose.polymtl.ca/',
         detail: {
             gameName: 'Bug Characteristics in Quantum Software Ecosystem',
