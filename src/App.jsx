@@ -65,7 +65,7 @@ function App() {
   
   return (
     <>
-	<a href="/path-to-your-cv.pdf" download="YourName_CV.pdf" className='fixed z-10 p-2 left-4 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md'>
+	<a href="./assets/cv.pdf" download="cv_kittaphot.pdf" className='fixed z-10 p-2 left-4 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md'>
 		<p className='text-sm md:text-base font-medium px-2 text-stone-200 dark:text-stone-800'>
 			See my CV
 		</p>
