@@ -135,8 +135,8 @@ export default [
         imgUrl: './assets/wangjung.png',
         videoUrl: '',
         stack: [, 'React Native', 'NestJS', 'TypeORM'],
-        link: 'https://github.com/ZnoKunG/wangchan_fe',
-        linkMessage: 'See Github Repo',
+        link: '10.1109/ISCIT63075.2024.10793699',
+        linkMessage: 'See the paper',
         detail: {
             gameName: 'Wangjung: Mobile Application',
             responsibilty: 'Full Stack Developer, Scrum Master',
