@@ -1,6 +1,6 @@
 export default [
     {
-        title: 'Biblia: Personalized Reading Record',
+        title: 'Biblia: Reading Record App with Chatbot',
         imgUrl: './assets/biblia.png',
         videoUrl: '',
         stack: ['React Native', 'Gin', 'Langchain'],
@@ -156,7 +156,7 @@ export default [
         }
     },
     {
-        title: 'Wangjung: Mobile App',
+        title: 'Wangjung: Job Finding App for Elderly',
         imgUrl: './assets/wangjung.png',
         videoUrl: '',
         stack: [, 'React Native', 'NestJS', 'TypeORM'],
