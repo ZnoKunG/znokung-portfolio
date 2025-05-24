@@ -1,19 +1,53 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useTheme } from '../context/ThemeContext';
 
 function ItemImg({ title, imgUrl, stack, link, detail }) {
+    const { isDark } = useTheme();
+
+    useEffect(() => {
+        const dialog = document.getElementById(detail.gameName);
+        
+        const handleDialogOpen = () => {
+            document.body.style.overflow = 'hidden';
+        };
+        
+        const handleDialogClose = () => {
+            document.body.style.overflow = 'auto';
+        };
+        
+        dialog.addEventListener('close', handleDialogClose);
+        dialog.addEventListener('cancel', handleDialogClose);
+        
+        return () => {
+            dialog.removeEventListener('close', handleDialogClose);
+            dialog.removeEventListener('cancel', handleDialogClose);
+        };
+    }, [detail.gameName]);
+
+    const handleOpenModal = () => {
+        const dialog = document.getElementById(detail.gameName);
+        dialog.showModal();
+        document.body.style.overflow = 'hidden';
+    };
+
     return (
         <div>
-            <div className='border border-green-800 rounded-md overflow-hidden bg-gray-900 hover:border-green-500 transition-colors'>
-                <button className="btn" onClick={() => document.getElementById(detail.gameName).showModal()}>
-                    <img src={imgUrl}
-                    className='w-full h-36 md:h-48 object-cover cursor-pointer'> 
-                    </img>
+            <div className='terminal-card'>
+                <button className="w-full" onClick={handleOpenModal}>
+                    <img 
+                        src={imgUrl}
+                        alt={title}
+                        className='w-full h-36 md:h-48 object-cover cursor-pointer'
+                    /> 
                 </button>
                 <div className='w-full p-4'>
-                    <h3 className='text-lg text-green-400 md:text-xl mb-2 md:mb-3 font-semibold'>{title}</h3>
+                    <h3 className='text-lg terminal-text md:text-xl mb-2 md:mb-3 font-semibold'>{title}</h3>
                     <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm'>
-                        {stack.map(item => (
-                            <span className='inline-block px-2 py-1 font-semibold border border-green-800 text-green-400 rounded-md hover:border-green-500 transition-colors'>
+                        {stack.map((item, index) => (
+                            <span 
+                                key={index}
+                                className='terminal-tag'
+                            >
                                 {item}
                             </span>
                         ))}
@@ -21,37 +55,56 @@ function ItemImg({ title, imgUrl, stack, link, detail }) {
                 </div>
             </div>
 
-            <dialog id={detail.gameName} className='modal border border-green-800 rounded-md overflow-auto bg-gray-900 px-10 py-5'>
-                <div className="modal-action">
-                    <form method="dialog">
-                    <button>
-                        <svg className='btn absolute inset-y-0 right-0 h-5 mt-4 mr-4 text-green-400' xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 32 32" viewBox="0 0 32 32" id="cross"><path d="M18.12109,16L31.06055,3.06055c0.58594-0.58545,0.58594-1.53564,0-2.12109c-0.58594-0.58594-1.53516-0.58594-2.12109,0L16,13.87891L3.06055,0.93945c-0.58594-0.58594-1.53516-0.58594-2.12109,0c-0.58594,0.58545-0.58594,1.53564,0,2.12109L13.87891,16L0.93945,28.93945c-0.58594,0.58545-0.58594,1.53564,0,2.12109C1.23242,31.35352,1.61621,31.5,2,31.5s0.76758-0.14648,1.06055-0.43945L16,18.12109l12.93945,12.93945C29.23242,31.35352,29.61621,31.5,30,31.5s0.76758-0.14648,1.06055-0.43945c0.58594-0.58545,0.58594-1.53564,0-2.12109L18.12109,16z"></path></svg>
-                    </button>
-                    </form>
-                </div>
-                <div className="flex items-center justify-center flex-col text-center">
-                    <h1 className='text-2xl md:text-4xl mb-1 md:mb-1 font-bold text-green-400'>{detail.gameName}</h1>
-                    <p className='text-base md:text-xl mb-5 font-medium text-green-300'>{detail.workplace}</p>
-                    <img src={imgUrl}
-                    className='w-full h-80 md:h-96 mb-4 object-cover cursor-pointer border border-green-800 rounded-md'> 
-                    </img>
-                    <h1 className='text-base md:text-lg text-cyan-400 mb-3 mt-3 md:mb-3 font-bold'>{detail.responsibilty}</h1>
-                    <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm'>
-                        {stack.map(item => (
-                            <span className='inline-block px-2 py-1 font-semibold border border-green-800 text-green-400 rounded-md hover:border-green-500 transition-colors'>
-                                {item}
-                            </span>
+            <dialog 
+                id={detail.gameName} 
+                className='modal bg-transparent border-none outline-none rounded-xl overflow-hidden p-0 fixed backdrop:bg-black/50 backdrop:backdrop-blur-sm'
+                onClick={(e) => {
+                    const dialogDimensions = e.currentTarget.getBoundingClientRect()
+                    if (
+                        e.clientX < dialogDimensions.left ||
+                        e.clientX > dialogDimensions.right ||
+                        e.clientY < dialogDimensions.top ||
+                        e.clientY > dialogDimensions.bottom
+                    ) {
+                        e.currentTarget.close()
+                    }
+                }}
+            >
+                <div className='terminal-card p-10 rounded-xl max-h-[90vh] overflow-y-auto'>
+                    <div className="flex items-center justify-center flex-col text-center">
+                        <h1 className='text-2xl md:text-4xl mb-1 md:mb-1 font-bold terminal-text'>{detail.gameName}</h1>
+                        <p className='text-base md:text-xl mb-5 font-medium terminal-text-secondary'>{detail.workplace}</p>
+                        <div className='terminal-card overflow-hidden mb-4'>
+                            <img 
+                                src={imgUrl}
+                                alt={detail.gameName}
+                                className='w-full h-80 md:h-96 object-cover cursor-pointer'
+                            /> 
+                        </div>
+                        <h1 className='text-base md:text-lg terminal-text-cyan mb-3 mt-3 md:mb-3 font-bold'>{detail.responsibilty}</h1>
+                        <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm'>
+                            {stack.map((item, index) => (
+                                <span 
+                                    key={index}
+                                    className='terminal-tag'
+                                >
+                                    {item}
+                                </span>
+                            ))}
+                        </p>
+                    </div>
+                    <h1 className='text-xl md:text-2xl mt-6 mb-3 md:mb-3 md:mt-6 font-bold terminal-text'>Project Contribution</h1>
+                    <ul className='list-inside terminal-text-secondary list-disc'>
+                        {detail.contribution.map((contribute, index) => (
+                            <li 
+                                key={index}
+                                className='text-base md:text-lg mb-1 font-medium'
+                            >
+                                {contribute}
+                            </li>
                         ))}
-                    </p>
+                    </ul>
                 </div>
-                <h1 className='text-xl md:text-2xl mt-6 mb-3 md:mb-3 md:mt-6 font-bold text-green-400'>Project Contribution</h1>
-                <ul className='list-inside text-green-300 list-disc'>
-                    {detail.contribution.map(contribute => (
-                        <li className='text-base md:text-lg mb-1 font-medium'>
-                            {contribute}
-                        </li>
-                    ))}
-                </ul>
             </dialog>
         </div>
     )

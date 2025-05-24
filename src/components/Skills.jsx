@@ -1,46 +1,53 @@
 import React from 'react';
+import { useTheme } from '../context/ThemeContext';
+import { FaCode, FaTools, FaServer, FaGamepad } from 'react-icons/fa';
 
 function Skills() {
-    const skillCategories = [
+    const { isDark } = useTheme();
+    const skills = [
         {
-            title: "Computer Languages",
-            skills: ["Typescript", "Javascript", "HTML", "CSS", "C#", "C", "C++", "Python", "Java", "SQL"]
+            category: "Programming Languages",
+            icon: FaCode,
+            items: ["C#", "C", "C++", "JavaScript", "TypeScript", "Golang", "Python", "SQL", "HTML/CSS"]
         },
         {
-            title: "Libraries & Frameworks",
-            skills: ["React", "React Native", "Angular", "NestJS", ".NET Core", "CUDA", "HLSL", "GLSL", "SFML", "Unity"]
+            category: "Frameworks & Libraries",
+            icon: FaServer,
+            items: ["React", "React Native", "Angular", "NodeJS", "ExpressJS", "Expo", "Gin", "TailwindCSS"]
         },
         {
-            title: "DevOps & Cloud",
-            skills: ["AWS", "DigitalOcean", "MongoDB", "Azure", "Firebase", "Github Actions"]
+            category: "Tools & Technologies",
+            icon: FaTools,
+            items: ["Git", "Docker", "Linux Commands", "AWS", "DigitalOcean", "MongoDB", "MySQL", "PostgreSQL", "Jira", "Bitbucket", "Github Actions", "Swagger"]
         },
         {
-            title: "Communication Languages",
-            skills: ["Thai (Native)", "English (IELTS 7.5)"]
+            category: "Game Development & Graphics",
+            icon: FaGamepad,
+            items: ["Unity", "Unreal Engine", "OpenGL", "CUDA", "GLSL", "HLSL", "Shader Graph"]
         }
     ];
 
     return (
         <div className='space-y-8'>
             <div className='text-center space-y-4'>
-                <h2 className='text-3xl font-bold text-green-400'>Skills & Proficiencies</h2>
-                <p className='text-green-300 max-w-2xl mx-auto'>
-                    Technical expertise and language proficiencies
+                <h2 className='text-3xl font-bold terminal-text'>Technical Skills</h2>
+                <p className='terminal-text-secondary max-w-2xl mx-auto'>
+                    My technical toolkit and areas of expertise
                 </p>
             </div>
 
-            <div className='grid gap-8'>
-                {skillCategories.map((category, index) => (
-                    <div 
-                        key={index}
-                        className='bg-gray-900 rounded-lg p-6 border border-green-800'
-                    >
-                        <h3 className='text-xl font-semibold text-green-400 mb-4'>{category.title}</h3>
-                        <div className='flex flex-wrap gap-3'>
-                            {category.skills.map((skill, skillIndex) => (
+            <div className='grid gap-6'>
+                {skills.map((skillGroup, index) => (
+                    <div key={index} className='terminal-card p-6'>
+                        <h3 className='text-xl font-semibold terminal-text mb-4 flex items-center gap-2'>
+                            <skillGroup.icon className="w-5 h-5 terminal-text-cyan" />
+                            {skillGroup.category}
+                        </h3>
+                        <div className='flex flex-wrap gap-2'>
+                            {skillGroup.items.map((skill, skillIndex) => (
                                 <span 
                                     key={skillIndex}
-                                    className='px-4 py-2 bg-gray-800 text-green-400 border border-green-800 rounded-full text-sm font-medium hover:border-green-500 transition-colors'
+                                    className='terminal-tag'
                                 >
                                     {skill}
                                 </span>

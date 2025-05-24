@@ -1,6 +1,7 @@
 import React from 'react';
 import portfolio from '../data/portfolio';
 import ItemVideo from './ItemVideo';
+import { FaCode, FaGamepad, FaPaintBrush, FaMicrochip } from 'react-icons/fa';
 
 function Project() {
     // Group projects by category
@@ -9,6 +10,14 @@ function Project() {
         acc[project.category].push(project);
         return acc;
     }, {});
+
+    // Define display order and icons for categories
+    const categoryConfig = {
+        'Software Development': { icon: FaCode },
+        'Game Development': { icon: FaGamepad },
+        'Graphics Demonstration': { icon: FaPaintBrush },
+        'Low-Level Programming': { icon: FaMicrochip }
+    };
 
     // Define display order for categories
     const categoryOrder = [
@@ -29,7 +38,10 @@ function Project() {
             {categoryOrder.map(category => (
                 grouped[category] && (
                     <div key={category} className="space-y-6">
-                        <h3 className="text-2xl font-semibold text-cyan-400 border-b border-green-800 pb-2 mb-2">{category}</h3>
+                        <h3 className="text-2xl font-semibold text-cyan-400 border-b border-green-800 pb-2 mb-2 flex items-center gap-2">
+                            {React.createElement(categoryConfig[category].icon, { className: "w-6 h-6" })}
+                            {category}
+                        </h3>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                             {grouped[category].map((project, index) => (
                                 <ItemVideo

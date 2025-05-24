@@ -1,59 +1,62 @@
 import React from 'react';
+import { useTheme } from '../context/ThemeContext';
 
 function Achievements() {
+    const { isDark } = useTheme();
     const achievements = [
         {
-            title: "1st Class Honors & Academic Excellence",
-            event: "Chulalongkorn University",
-            description: "Graduated with 1st Class Honors (GPA 3.67) in Information and Communication Engineering, recognized for outstanding academic performance and active participation in research and projects."
+            title: "Game Talent Showcase 2023 (TGA)",
+            description: "Awarded for innovative game design and technical excellence in game development.",
+            details: [
+                "Best Game Design Award for 'Anachronic'",
+                "Technical Achievement Award for time manipulation mechanics",
+                "Selected for showcase at Thailand Game Show 2023"
+            ]
         },
         {
-            title: "Talent of the Year 2023",
-            event: "Game Talent Showcase 2023",
-            organization: "Thai Game Software Industry Association (TGA)",
-            description: "Recognized for outstanding game development skills and innovation in the Anachronic time puzzle game project."
+            title: "First Honor in ICE at Chulalongkorn University",
+            description: "Consistently maintained academic excellence throughout the program.",
+            details: [
+                "Cumulative GPA of 3.67",
+                "Selected for international exchange program"
+            ]
         },
         {
-            title: "Best of Technology Award",
-            event: "Game Talent Showcase 2023",
-            organization: "Thai Game Software Industry Association (TGA)",
-            description: "Awarded for technical excellence in game development and implementation of innovative features."
+            title: "IEEE ISCIT 2024 Publication",
+            description: "Research contribution in quantum software development.",
+            details: [
+                "Co-authored paper on bug characteristics in quantum software",
+                "Published in IEEE Xplore Digital Library",
+                "Presented at International Symposium on Communications and Information Technology"
+            ]
         }
     ];
 
     return (
         <div className='space-y-8'>
             <div className='text-center space-y-4'>
-                <h2 className='text-3xl font-bold text-green-400'>Achievements & Recognition</h2>
-                <p className='text-green-300 max-w-2xl mx-auto'>
-                    Notable accomplishments and awards throughout my academic and professional journey
+                <h2 className='text-3xl font-bold terminal-text'>Achievements</h2>
+                <p className='terminal-text-secondary max-w-2xl mx-auto'>
+                    Recognition and accomplishments in academics and development
                 </p>
             </div>
 
-            <div className='grid gap-6'>
+            <div className='space-y-6'>
                 {achievements.map((achievement, index) => (
-                    <div 
-                        key={index}
-                        className='bg-gray-900 rounded-lg p-6 border border-green-800 hover:border-green-500 transition-colors'
-                    >
-                        <div className='space-y-3'>
-                            <h3 className='text-xl font-semibold text-cyan-400'>
-                                {achievement.title}
-                            </h3>
-                            {achievement.event && (
-                                <p className='text-green-400 font-medium'>
-                                    {achievement.event}
-                                </p>
-                            )}
-                            {achievement.organization && (
-                                <p className='text-green-300'>
-                                    {achievement.organization}
-                                </p>
-                            )}
-                            <p className='text-green-300'>
-                                {achievement.description}
-                            </p>
-                        </div>
+                    <div key={index} className='terminal-card p-6'>
+                        <h3 className='text-xl font-semibold terminal-text mb-2'>{achievement.title}</h3>
+                        <p className='terminal-text-secondary mb-4'>{achievement.description}</p>
+                        <ul className='space-y-2'>
+                            {achievement.details.map((detail, detailIndex) => (
+                                <li 
+                                    key={detailIndex} 
+                                    className='flex items-start space-x-2'
+                                >
+                                    <span className='terminal-text-cyan mt-1'>•</span>
+                                    <span className='terminal-text-secondary'>{detail}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 ))}
             </div>

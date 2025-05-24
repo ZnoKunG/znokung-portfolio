@@ -1,8 +1,9 @@
 :root {
-    /* Base colors */
+    /* Base colors - Dark Mode (Default) */
     --bg-primary: #0a0a0a;
     --bg-secondary: #1a1a1a;
     --bg-tertiary: #2a2a2a;
+    --bg-overlay: rgba(0, 0, 0, 0.8);
 
     /* Text colors - more eye-friendly terminal colors */
     --text-primary: #9eff9e;    /* Softer green */
@@ -45,6 +46,53 @@
     --transition-fast: 150ms ease;
     --transition-normal: 250ms ease;
     --transition-slow: 350ms ease;
+
+    /* Transitions */
+    --theme-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Light Mode Colors */
+:root.light-mode {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --bg-tertiary: #e5e7eb;
+    --bg-overlay: rgba(255, 255, 255, 0.8);
+
+    --text-primary: #166534;    /* Dark green */
+    --text-secondary: #15803d;  /* Medium dark green */
+    --text-accent: #16a34a;     /* Bright green */
+    --text-cyan: #0891b2;       /* Dark cyan */
+    --text-muted: #6b7280;      /* Gray text */
+
+    --border-primary: #bbf7d0;  /* Light green */
+    --border-hover: #86efac;    /* Medium light green */
+    --border-accent: #4ade80;   /* Bright green */
+
+    --btn-bg: var(--bg-tertiary);
+    --btn-text: var(--text-primary);
+    --btn-border: var(--border-primary);
+    --btn-hover-bg: var(--bg-secondary);
+    --btn-hover-border: var(--border-hover);
+}
+
+/* Apply transitions to theme changes */
+body,
+.terminal-bg,
+.terminal-card,
+.terminal-btn,
+.terminal-tag,
+.terminal-text,
+.terminal-text-secondary,
+.terminal-text-accent,
+.terminal-text-cyan,
+.terminal-border {
+    transition: var(--theme-transition);
+}
+
+/* Update header background for both themes */
+.header-bg {
+    background-color: var(--bg-overlay);
+    backdrop-filter: blur(8px);
 }
 
 /* Utility classes */
@@ -77,15 +125,15 @@
 }
 
 .terminal-btn {
-    background-color: var(--btn-bg);
-    color: var(--btn-text);
-    border: 1px solid var(--btn-border);
-    transition: all var(--transition-normal);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    transition: var(--theme-transition);
 }
 
 .terminal-btn:hover {
-    background-color: var(--btn-hover-bg);
-    border-color: var(--btn-hover-border);
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-hover);
 }
 
 /* Common component styles */
