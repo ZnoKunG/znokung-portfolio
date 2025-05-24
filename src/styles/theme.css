@@ -1,0 +1,153 @@
+:root {
+    /* Base colors */
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #1a1a1a;
+    --bg-tertiary: #2a2a2a;
+
+    /* Text colors - more eye-friendly terminal colors */
+    --text-primary: #9eff9e;    /* Softer green */
+    --text-secondary: #7dff7d;  /* Medium green */
+    --text-accent: #4dff4d;     /* Bright green for emphasis */
+    --text-cyan: #00e6e6;       /* Softer cyan */
+    --text-muted: #666666;      /* Muted text */
+
+    /* Border colors */
+    --border-primary: #2d4a2d;  /* Darker green */
+    --border-hover: #3d6a3d;    /* Lighter green for hover */
+    --border-accent: #4d8a4d;   /* Bright green for active states */
+
+    /* Interactive elements */
+    --btn-bg: var(--bg-tertiary);
+    --btn-text: var(--text-primary);
+    --btn-border: var(--border-primary);
+    --btn-hover-bg: var(--bg-secondary);
+    --btn-hover-border: var(--border-hover);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* Border radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-full: 9999px;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 350ms ease;
+}
+
+/* Utility classes */
+.terminal-bg {
+    background-color: var(--bg-primary);
+}
+
+.terminal-text {
+    color: var(--text-primary);
+}
+
+.terminal-text-secondary {
+    color: var(--text-secondary);
+}
+
+.terminal-text-accent {
+    color: var(--text-accent);
+}
+
+.terminal-text-cyan {
+    color: var(--text-cyan);
+}
+
+.terminal-border {
+    border-color: var(--border-primary);
+}
+
+.terminal-border-hover:hover {
+    border-color: var(--border-hover);
+}
+
+.terminal-btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: 1px solid var(--btn-border);
+    transition: all var(--transition-normal);
+}
+
+.terminal-btn:hover {
+    background-color: var(--btn-hover-bg);
+    border-color: var(--btn-hover-border);
+}
+
+/* Common component styles */
+.terminal-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-md);
+    transition: border-color var(--transition-normal);
+}
+
+.terminal-card:hover {
+    border-color: var(--border-hover);
+}
+
+.terminal-tag {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-full);
+    padding: var(--spacing-xs) var(--spacing-md);
+    transition: all var(--transition-normal);
+}
+
+.terminal-tag:hover {
+    border-color: var(--border-hover);
+}
+
+/* Typography */
+.terminal-heading {
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+.terminal-subheading {
+    color: var(--text-secondary);
+}
+
+.terminal-body {
+    color: var(--text-primary);
+}
+
+/* Layout */
+.terminal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+}
+
+.terminal-section {
+    margin: var(--spacing-xl) 0;
+}
+
+/* Animations */
+@keyframes terminal-fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.terminal-fade-in {
+    animation: terminal-fade var(--transition-normal);
+} 

@@ -1,11 +1,30 @@
 export default [
     {
+        title: 'Biblia: Personalized Reading Record',
+        imgUrl: './assets/biblia.png',
+        videoUrl: '',
+        stack: ['React Native', 'Gin', 'Langchain'],
+        link: 'https://github.com/ZnoKunG/biblia_fe',
+        linkMessage: 'See Project',
+        category: 'Software Development',
+        detail: {
+            gameName: 'Biblia',
+            responsibilty: 'Software Developer',
+            projectType: 'Senior Project',
+            contribution: [
+                'Developing a mobile app using React Native and Expo integrated with a back-end service using Golang and Gin.',
+                'Designed recommendation chatbot agent integration with personalized user data using Langchain and SerpApi.'
+            ],
+        }
+    },
+    {
         title: 'Anachronic',
         imgUrl: '',
         videoUrl: './assets/anachronic.mp4',
         stack: ['Unity', 'C#', 'Tilemap Editor'],
         link: 'https://yonderu.itch.io/anachronic',
         linkMessage: 'Play the game',
+        category: 'Game Development',
         detail: {
             gameName: 'Anachronic',
             responsibilty: 'Gameplay Programmer & Game Designer',
@@ -25,6 +44,7 @@ export default [
         stack: ['Unity', 'C#', 'Socket Programming'],
         link: 'https://bitbucket.org/netcentric/findmymines/src/master/',
         linkMessage: 'See Github Repo',
+        category: 'Game Development',
         detail: {
             gameName: 'FindMyMines',
             responsibilty: 'Full Stack Developer & Project Manager',
@@ -42,6 +62,7 @@ export default [
         stack: ['Unity', 'C#', 'Shader Graph'],
         link: 'https://chulagrdc.itch.io/esc-every-second-counts',
         linkMessage: 'Play the game',
+        category: 'Game Development',
         detail: {
             gameName: 'Every Second Count',
             responsibilty: 'Gameplay Programmer',
@@ -59,6 +80,7 @@ export default [
         stack: ['Unity', 'C#', '.NET CORE'],
         link: 'https://github.com/ZnoKunG/fsweeper-unity',
         linkMessage: 'See Github Repo',
+        category: 'Game Development',
         detail: {
             gameName: 'FSweeper',
             responsibilty: 'Gameplay Programmer and Backend Developer',
@@ -80,6 +102,7 @@ export default [
         stack: ['C++', 'SFML'],
         link: 'https://github.com/ZnoKunG/sfml-collision',
         linkMessage: 'See Github Repo',
+        category: 'Graphics Demonstration',
         detail: {
             gameName: 'SFML Collision Demo',
             responsibilty: 'Programmer',
@@ -97,6 +120,7 @@ export default [
         stack: ['C++', 'SFML', 'ECS'],
         link: 'https://github.com/ZnoKunG/sfml-geometrybattles',
         linkMessage: 'See Github Repo',
+        category: 'Game Development',
         detail: {
             gameName: 'SFML Geometry Battles',
             responsibilty: 'Programmer',
@@ -119,6 +143,7 @@ export default [
         stack: ['Unity', 'HLSL', 'Compute Shader'],
         link: 'https://github.com/ZnoKunG/unity-graphing',
         linkMessage: 'See Github Repo',
+        category: 'Graphics Demonstration',
         detail: {
             gameName: 'Graphing Demo',
             responsibilty: 'Programmer',
@@ -137,6 +162,7 @@ export default [
         stack: [, 'React Native', 'NestJS', 'TypeORM'],
         link: '10.1109/ISCIT63075.2024.10793699',
         linkMessage: 'See the paper',
+        category: 'Software Development',
         detail: {
             gameName: 'Wangjung: Mobile Application',
             responsibilty: 'Full Stack Developer, Scrum Master',
@@ -159,6 +185,7 @@ export default [
         stack: ['OpenGL', 'C++', 'GLSL'],
         link: 'https://github.com/ZnoKunG/opengl-graphics',
         linkMessage: 'See Github Repo',
+        category: 'Graphics Demonstration',
         detail: {
             gameName: 'OpenGL: Graphics Rendering',
             responsibilty: 'Programmer',
@@ -177,6 +204,7 @@ export default [
         stack: ['C++', 'CUDA'],
         link: 'https://github.com/ZnoKunG/cuda-fft',
         linkMessage: 'See Github Repo',
+        category: 'Low-Level Programming',
         detail: {
             gameName: 'Fast Fourier Transform on GPU',
             responsibilty: 'Programmer',
@@ -196,6 +224,7 @@ export default [
         stack: ['C'],
         link: 'https://github.com/ZnoKunG/compiler_c',
         linkMessage: 'See Github Repo',
+        category: 'Low-Level Programming',
         detail: {
             gameName: 'Simple Compiler written in C',
             responsibilty: 'Programmer',

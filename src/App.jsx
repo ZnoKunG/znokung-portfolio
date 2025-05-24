@@ -1,90 +1,76 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Intro from './components/Intro';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
+import Education from './components/Education';
+import Skills from './components/Skills';
+import Achievements from './components/Achievements';
 
 function App() {
-  const [theme, setTheme] = useState(null);
+	const [activeTab, setActiveTab] = useState('intro');
 
-  useEffect(() => {
-		setTheme('dark');
-		// if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-		// 	setTheme('dark');
-		// } else {
-		// 	setTheme('light');
-		// }
-	}, []);
-
-	const handleThemeSwitch = () => {
-		setTheme(theme === 'dark' ? 'light' : 'dark');
-	};
-
-	useEffect(() => {
-		if (theme === 'dark') {
-			document.documentElement.classList.add('dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-		}
-	}, [theme]);
-
-	const sun = (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			fill="none"
-			viewBox="0 0 24 24"
-			strokeWidth={1.5}
-			stroke="currentColor"
-			className="w-6 h-6"
-		>
-			<path
-				strokeLinecap="round"
-				strokeLinejoin="round"
-				d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-			/>
-		</svg>
-	);
-
-	const moon = (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			fill="none"
-			viewBox="0 0 24 24"
-			strokeWidth={1.5}
-			stroke="white"
-			className="w-6 h-6"
-		>
-			<path
-				strokeLinecap="round"
-				strokeLinejoin="round"
-				d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
-			/>
-		</svg>
-	);
+	const tabs = [
+		{ id: 'intro', label: 'About' },
+		{ id: 'experience', label: 'Experience' },
+		{ id: 'education', label: 'Education' },
+		{ id: 'projects', label: 'Projects' },
+		{ id: 'skills', label: 'Skills' },
+		{ id: 'achievements', label: 'Achievements' },
+		{ id: 'contact', label: 'Contact' }
+	];
   
-  return (
-    <>
-	<a href="./assets/cv.pdf" download="cv_kittaphot.pdf" className='fixed z-10 p-2 left-4 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md'>
-		<p className='text-sm md:text-base font-medium px-2 text-stone-200 dark:text-stone-800'>
-			See my CV
-		</p>
-	</a>
+	return (
+		<div className='bg-black text-green-400 min-h-screen font-mono'>
+			{/* Header with navigation */}
+			<header className='fixed top-0 left-0 right-0 z-20 bg-black/80 backdrop-blur-sm border-b border-green-800'>
+				<div className='max-w-7xl mx-auto px-4'>
+					<div className='flex items-center justify-between h-16'>
+						<nav className='flex space-x-1 overflow-x-auto scrollbar-hide'>
+							{tabs.map(tab => (
+								<button
+									key={tab.id}
+									onClick={() => setActiveTab(tab.id)}
+									className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 whitespace-nowrap ${
+										activeTab === tab.id
+											? 'bg-gray-900 text-green-400 border border-green-500'
+											: 'text-green-400 hover:bg-gray-900 hover:border hover:border-green-800'
+									}`}
+								>
+									{tab.label}
+								</button>
+							))}
+						</nav>
+						<div className='flex items-center space-x-4 ml-4'>
+							<a
+								href="./assets/cv.pdf"
+								download="cv_kittaphot.pdf"
+								className='px-3 py-2 rounded-md text-sm font-medium bg-gray-900 text-green-400 border border-green-800 hover:border-green-500 transition-colors'
+							>
+								Download CV
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
 
-      <button type='btn' onClick={handleThemeSwitch} className='fixed p-2 z-10 right-4 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md'>
-        {theme =='dark' ? sun : moon}
-      </button>
-      <div className='bg-stone-200 dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter'>
-        <div className='max-w-5xl w-11/12 mx-auto'>
-          <Intro />
-          <Project />
-		  <Experience />
-          <Contact />
-          <Footer />
-        </div>
-      </div>
-    </>
-  )
+			{/* Main content */}
+			<main className='pt-20'>
+				<div className='max-w-7xl mx-auto px-4 py-8'>
+					{activeTab === 'intro' && <Intro />}
+					{activeTab === 'experience' && <Experience />}
+					{activeTab === 'education' && <Education />}
+					{activeTab === 'projects' && <Project />}
+					{activeTab === 'skills' && <Skills />}
+					{activeTab === 'achievements' && <Achievements />}
+					{activeTab === 'contact' && <Contact />}
+				</div>
+			</main>
+
+			<Footer />
+		</div>
+	);
 }
 
 export default App
