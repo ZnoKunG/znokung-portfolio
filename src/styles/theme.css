@@ -1,21 +1,21 @@
 :root {
     /* Base colors - Dark Mode (Default) */
-    --bg-primary: #0a0a0a;
-    --bg-secondary: #1a1a1a;
-    --bg-tertiary: #2a2a2a;
-    --bg-overlay: rgba(0, 0, 0, 0.8);
+    --bg-primary: #0a0f18;      /* Deep navy blue */
+    --bg-secondary: #1a1f2e;    /* Darker blue-gray */
+    --bg-tertiary: #2a2f3f;     /* Medium blue-gray */
+    --bg-overlay: rgba(10, 15, 24, 0.8);
 
-    /* Text colors - more eye-friendly terminal colors */
-    --text-primary: #9eff9e;    /* Softer green */
-    --text-secondary: #7dff7d;  /* Medium green */
-    --text-accent: #4dff4d;     /* Bright green for emphasis */
-    --text-cyan: #00e6e6;       /* Softer cyan */
-    --text-muted: #666666;      /* Muted text */
+    /* Text colors - cyberpunk inspired */
+    --text-primary: #00ff9d;    /* Neon green */
+    --text-secondary: #00ccff;  /* Bright cyan */
+    --text-accent: #ff00ff;     /* Magenta */
+    --text-cyan: #00ffff;       /* Bright cyan */
+    --text-muted: #4d5875;      /* Muted blue-gray */
 
     /* Border colors */
-    --border-primary: #2d4a2d;  /* Darker green */
-    --border-hover: #3d6a3d;    /* Lighter green for hover */
-    --border-accent: #4d8a4d;   /* Bright green for active states */
+    --border-primary: #2d4a6d;  /* Deep blue */
+    --border-hover: #3d6a9d;    /* Brighter blue */
+    --border-accent: #4d8acd;   /* Bright blue */
 
     /* Interactive elements */
     --btn-bg: var(--bg-tertiary);
@@ -25,9 +25,9 @@
     --btn-hover-border: var(--border-hover);
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-sm: 0 1px 2px rgba(0, 255, 157, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 255, 157, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 255, 157, 0.1);
 
     /* Spacing */
     --spacing-xs: 0.25rem;
@@ -53,20 +53,20 @@
 
 /* Light Mode Colors */
 :root.light-mode {
-    --bg-primary: #ffffff;
-    --bg-secondary: #f3f4f6;
-    --bg-tertiary: #e5e7eb;
-    --bg-overlay: rgba(255, 255, 255, 0.8);
+    --bg-primary: #f0f4ff;      /* Light blue-tinted white */
+    --bg-secondary: #e0e7ff;    /* Lighter blue */
+    --bg-tertiary: #d0dcff;     /* Light blue */
+    --bg-overlay: rgba(240, 244, 255, 0.8);
 
-    --text-primary: #166534;    /* Dark green */
-    --text-secondary: #15803d;  /* Medium dark green */
-    --text-accent: #16a34a;     /* Bright green */
-    --text-cyan: #0891b2;       /* Dark cyan */
-    --text-muted: #6b7280;      /* Gray text */
+    --text-primary: #2563eb;    /* Royal blue */
+    --text-secondary: #1d4ed8;  /* Darker blue */
+    --text-accent: #7c3aed;     /* Purple */
+    --text-cyan: #0284c7;       /* Ocean blue */
+    --text-muted: #64748b;      /* Slate */
 
-    --border-primary: #bbf7d0;  /* Light green */
-    --border-hover: #86efac;    /* Medium light green */
-    --border-accent: #4ade80;   /* Bright green */
+    --border-primary: #93c5fd;  /* Light blue */
+    --border-hover: #60a5fa;    /* Medium blue */
+    --border-accent: #3b82f6;   /* Bright blue */
 
     --btn-bg: var(--bg-tertiary);
     --btn-text: var(--text-primary);

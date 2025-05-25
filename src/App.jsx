@@ -87,12 +87,12 @@ function AppContent() {
 								)}
 							</button>
 							<a
-								href="./assets/cv.pdf"
-								download="cv_kittaphot.pdf"
+								href="./assets/resume_kittaphot.pdf"
+								download="resume_kittaphot.pdf"
 								className='terminal-btn px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2 hover:border-green-500 transition-all duration-200'
 							>
 								<FaFileDownload className="w-4 h-4 terminal-text" />
-								<span className="terminal-text">Download CV</span>
+								<span className="terminal-text">Download Resume</span>
 							</a>
 						</div>
 					</div>

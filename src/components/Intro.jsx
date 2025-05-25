@@ -108,7 +108,7 @@ function Intro() {
             {/* Highlight Projects Section */}
             <section className="w-full max-w-7xl mx-auto mt-16 terminal-section">
                 <div className="flex items-center gap-2 mb-12">
-                    <FaLaptopCode className="w-6 h-6 terminal-text-accent" />
+                    <FaLaptopCode className="w-6 h-6 terminal-text" />
                     <h2 className="text-3xl font-bold terminal-heading">Highlight Projects</h2>
                 </div>
                 <div className="space-y-6">
@@ -154,7 +154,7 @@ function Intro() {
                                         <div>
                                             <h3 className="text-3xl font-bold terminal-heading mb-3 flex items-center gap-3">
                                                 {proj.name}
-                                                <proj.icon className="text-green-400" />
+                                                <proj.icon className="terminal-text" />
                                             </h3>
                                             <p className="text-lg terminal-text-secondary" dangerouslySetInnerHTML={{ __html: proj.description }}></p>
                                         </div>
@@ -218,7 +218,7 @@ function Intro() {
             {/* Experience Summary Section */}
             <section className="w-full max-w-7xl mx-auto mt-16 terminal-section">
                 <div className="flex items-center gap-2 mb-12">
-                    <FaSuitcase className="w-6 h-6 terminal-text-accent" />
+                    <FaSuitcase className="w-6 h-6 terminal-text" />
                     <h2 className="text-3xl font-bold terminal-heading">Experience Summary</h2>
                 </div>
                 <div className="space-y-4">
