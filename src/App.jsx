@@ -92,7 +92,7 @@ function AppContent() {
 								className='terminal-btn px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2 hover:border-green-500 transition-all duration-200'
 							>
 								<FaFileDownload className="w-4 h-4 terminal-text" />
-								<span className="terminal-text">Download Resume</span>
+								<span className="terminal-text">Get Resume</span>
 							</a>
 						</div>
 					</div>
