@@ -69,11 +69,11 @@ const experienceSummary = [
 
 function Intro() {
     return (
-        <div className="flex flex-col items-center justify-center text-center pt-12 pb-6 space-y-4 font-mono terminal-bg terminal-text">
+        <div className="flex flex-col items-center justify-center text-center pt-12 pb-6 space-y-4 font-mono terminal-text">
             <img
                 src="./assets/profile.jpg"
                 alt="Kittaphot Saengprachathanarak profile"
-                className="w-40 h-40 rounded-full object-cover border-4 border-green-500 shadow-lg mb-4"
+                className="w-40 h-40 rounded-full object-cover border-4 border-[var(--border-primary)] shadow-lg mb-4"
             />
             <h1 className='text-4xl md:text-7xl terminal-heading mb-1'>Kittaphot Saengprachathanarak</h1>
             <p className='text-base md:text-xl mb-2 font-medium terminal-text-cyan'>Game Programmer & Full Stack Developer</p>
@@ -95,13 +95,13 @@ function Intro() {
             {/* Separator */}
             <div className="w-full max-w-7xl mx-auto mt-16 mb-8">
                 <div className="flex items-center justify-center gap-4">
-                    <div className="h-px bg-green-800 flex-1"></div>
+                    <div className="h-px bg-[var(--border-primary)] flex-1"></div>
                     <div className="flex gap-2">
-                        <div className="w-2 h-2 bg-green-800 rounded-full"></div>
-                        <div className="w-2 h-2 bg-green-800 rounded-full"></div>
-                        <div className="w-2 h-2 bg-green-800 rounded-full"></div>
+                        <div className="w-2 h-2 bg-[var(--border-primary)] rounded-full"></div>
+                        <div className="w-2 h-2 bg-[var(--border-primary)] rounded-full"></div>
+                        <div className="w-2 h-2 bg-[var(--border-primary)] rounded-full"></div>
                     </div>
-                    <div className="h-px bg-green-800 flex-1"></div>
+                    <div className="h-px bg-[var(--border-primary)] flex-1"></div>
                 </div>
             </div>
 
@@ -116,7 +116,7 @@ function Intro() {
                         <div key={proj.name}>
                             <div className={`relative ${index % 2 === 0 ? 'md:ml-12' : 'md:mr-12'}`}>
                                 {/* Project Media */}
-                                <div className={`relative aspect-video rounded-lg overflow-hidden border border-green-800 ${index % 2 === 0 ? 'md:float-right md:ml-8 md:w-2/3' : 'md:float-left md:mr-8 md:w-2/3'}`}>
+                                <div className={`relative aspect-video rounded-lg overflow-hidden border border-[var(--border-primary)] ${index % 2 === 0 ? 'md:float-right md:ml-8 md:w-2/3' : 'md:float-left md:mr-8 md:w-2/3'}`}>
                                     {proj.video ? (
                                         proj.video.includes('youtube.com') ? (
                                             <iframe
@@ -205,13 +205,13 @@ function Intro() {
             {/* Separator */}
             <div className="w-full max-w-7xl mx-auto mt-16 mb-8">
                 <div className="flex items-center justify-center gap-4">
-                    <div className="h-px bg-green-800 flex-1"></div>
+                    <div className="h-px bg-[var(--border-primary)] flex-1"></div>
                     <div className="flex gap-2">
-                        <div className="w-2 h-2 bg-green-800 rounded-full"></div>
-                        <div className="w-2 h-2 bg-green-800 rounded-full"></div>
-                        <div className="w-2 h-2 bg-green-800 rounded-full"></div>
+                        <div className="w-2 h-2 bg-[var(--border-primary)] rounded-full"></div>
+                        <div className="w-2 h-2 bg-[var(--border-primary)] rounded-full"></div>
+                        <div className="w-2 h-2 bg-[var(--border-primary)] rounded-full"></div>
                     </div>
-                    <div className="h-px bg-green-800 flex-1"></div>
+                    <div className="h-px bg-[var(--border-primary)] flex-1"></div>
                 </div>
             </div>
 

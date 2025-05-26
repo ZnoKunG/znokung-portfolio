@@ -11,7 +11,8 @@ function Achievements() {
                 "Best Game Design Award for 'Anachronic'",
                 "Technical Achievement Award for time manipulation mechanics",
                 "Selected for showcase at Thailand Game Show 2023"
-            ]
+            ],
+            imgUrl: "./assets/anachronic_win.jpg"
         },
         {
             title: "First Honor in ICE at Chulalongkorn University",
@@ -19,16 +20,18 @@ function Achievements() {
             details: [
                 "Cumulative GPA of 3.67",
                 "Selected for international exchange program"
-            ]
+            ],
+            imgUrl: "./assets/ice.png"
         },
         {
             title: "IEEE ISCIT 2024 Publication",
             description: "Research contribution in quantum software development.",
             details: [
-                "Co-authored paper on bug characteristics in quantum software",
+                "Most contribution on the application implementation and architecture design on Wangjung Mobile Application.",
                 "Published in IEEE Xplore Digital Library",
                 "Presented at International Symposium on Communications and Information Technology"
-            ]
+            ],
+            imgUrl: "./assets/iscit2024.png"
         }
     ];
 
@@ -44,9 +47,17 @@ function Achievements() {
             <div className='space-y-6'>
                 {achievements.map((achievement, index) => (
                     <div key={index} className='terminal-card p-6'>
-                        <h3 className='text-xl font-semibold terminal-text mb-2'>{achievement.title}</h3>
-                        <p className='terminal-text-secondary mb-4'>{achievement.description}</p>
-                        <ul className='space-y-2'>
+                        <div className='flex flex-col md:flex-row gap-6'>
+                        <div className='md:w-1/4 flex items-center justify-center'>
+                                <img 
+                                    src={achievement.imgUrl} 
+                                    className='w-45 h-45 object-contain'
+                                />
+                        </div>
+                        <div className='md:w-3/4'>
+                            <h3 className='text-xl font-semibold terminal-text mb-2'>{achievement.title}</h3>
+                            <p className='terminal-text-secondary mb-4'>{achievement.description}</p>
+                            <ul className='space-y-2'>
                             {achievement.details.map((detail, detailIndex) => (
                                 <li 
                                     key={detailIndex} 
@@ -57,6 +68,8 @@ function Achievements() {
                                 </li>
                             ))}
                         </ul>
+                        </div>
+                        </div>
                     </div>
                 ))}
             </div>

@@ -1,21 +1,22 @@
+/* Forest Mystique Theme */
 :root {
-    /* Base colors - Dark Mode (Default) */
-    --bg-primary: #0a0f18;      /* Deep navy blue */
-    --bg-secondary: #1a1f2e;    /* Darker blue-gray */
-    --bg-tertiary: #2a2f3f;     /* Medium blue-gray */
-    --bg-overlay: rgba(10, 15, 24, 0.8);
+    /* Base colors - Dark Mode: Deep Forest */
+    --bg-primary: #0d1b0d;      /* Deep forest black */
+    --bg-secondary: #1a2f1a;    /* Dark moss green */
+    --bg-tertiary: #2d4a2d;     /* Medium forest green */
+    --bg-overlay: rgba(13, 27, 13, 0.85);
 
-    /* Text colors - cyberpunk inspired */
-    --text-primary: #00ff9d;    /* Neon green */
-    --text-secondary: #00ccff;  /* Bright cyan */
-    --text-accent: #ff00ff;     /* Magenta */
-    --text-cyan: #00ffff;       /* Bright cyan */
-    --text-muted: #4d5875;      /* Muted blue-gray */
+    /* Text colors - Simple but interesting palette */
+    --text-primary: #e6f3ff;    /* Soft blue-white - gentle on eyes */
+    --text-secondary: #a8dadc;  /* Soft teal - calm and readable */
+    --text-accent: #f1c40f;     /* Warm yellow - friendly accent */
+    --text-cyan: #74c0fc;       /* Light blue - pleasant and clear */
+    --text-muted: #9ca3af;      /* Neutral gray - balanced muted text */
 
-    /* Border colors */
-    --border-primary: #2d4a6d;  /* Deep blue */
-    --border-hover: #3d6a9d;    /* Brighter blue */
-    --border-accent: #4d8acd;   /* Bright blue */
+    /* Border colors - Soft but defined borders */
+    --border-primary: #457b9d;  /* Soft blue - gentle definition */
+    --border-hover: #1d3557;    /* Deep blue - clear hover state */
+    --border-accent: #74c0fc;   /* Light blue - pleasant accent */
 
     /* Interactive elements */
     --btn-bg: var(--bg-tertiary);
@@ -24,10 +25,10 @@
     --btn-hover-bg: var(--bg-secondary);
     --btn-hover-border: var(--border-hover);
 
-    /* Shadows */
-    --shadow-sm: 0 1px 2px rgba(0, 255, 157, 0.1);
-    --shadow-md: 0 4px 6px rgba(0, 255, 157, 0.1);
-    --shadow-lg: 0 10px 15px rgba(0, 255, 157, 0.1);
+    /* Shadows - Soft blue glow */
+    --shadow-sm: 0 1px 2px rgba(116, 192, 252, 0.15);
+    --shadow-md: 0 4px 6px rgba(116, 192, 252, 0.15);
+    --shadow-lg: 0 10px 15px rgba(116, 192, 252, 0.15);
 
     /* Spacing */
     --spacing-xs: 0.25rem;
@@ -51,22 +52,24 @@
     --theme-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Light Mode Colors */
+/* Light Mode Colors - Sage & Cream */
 :root.light-mode {
-    --bg-primary: #f0f4ff;      /* Light blue-tinted white */
-    --bg-secondary: #e0e7ff;    /* Lighter blue */
-    --bg-tertiary: #d0dcff;     /* Light blue */
-    --bg-overlay: rgba(240, 244, 255, 0.8);
+    --bg-primary: #f5f5dc;      /* Warm cream */
+    --bg-secondary: #f0f8e8;    /* Light sage */
+    --bg-tertiary: #e6f2d9;     /* Pale sage green */
+    --bg-overlay: rgba(245, 245, 220, 0.9);
 
-    --text-primary: #2563eb;    /* Royal blue */
-    --text-secondary: #1d4ed8;  /* Darker blue */
-    --text-accent: #7c3aed;     /* Purple */
-    --text-cyan: #0284c7;       /* Ocean blue */
-    --text-muted: #64748b;      /* Slate */
+    /* Text colors - Simple but warm light mode */
+    --text-primary: #2c3e50;    /* Deep blue-gray - sophisticated */
+    --text-secondary: #34495e;  /* Medium blue-gray - harmonious */
+    --text-accent: #e67e22;     /* Warm orange - friendly accent */
+    --text-cyan: #3498db;       /* Clear blue - professional */
+    --text-muted: #7f8c8d;      /* Balanced gray - easy to read */
 
-    --border-primary: #93c5fd;  /* Light blue */
-    --border-hover: #60a5fa;    /* Medium blue */
-    --border-accent: #3b82f6;   /* Bright blue */
+    /* Border colors - Soft, elegant borders */
+    --border-primary: #bdc3c7;  /* Light gray - gentle separation */
+    --border-hover: #95a5a6;    /* Medium gray - subtle hover */
+    --border-accent: #74c0fc;   /* Light blue - pleasant accent */
 
     --btn-bg: var(--bg-tertiary);
     --btn-text: var(--text-primary);
@@ -198,4 +201,4 @@ body,
 
 .terminal-fade-in {
     animation: terminal-fade var(--transition-normal);
-} 
+}

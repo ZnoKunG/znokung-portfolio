@@ -50,7 +50,7 @@ function Experience() {
                                     <img 
                                         src={exp.imgUrl} 
                                         alt={exp.company}
-                                        className='w-32 h-32 object-contain'
+                                        className='w-40 h-40 object-contain'
                                     />
                                 </div>
                                 <div className='space-y-2'>

@@ -42,7 +42,7 @@ function Education() {
                                 <img 
                                     src={edu.imgUrl} 
                                     alt={edu.school}
-                                    className='w-32 h-32 object-contain'
+                                    className='w-50 h-50 object-contain'
                                 />
                             </div>
                             <div className='md:w-3/4'>

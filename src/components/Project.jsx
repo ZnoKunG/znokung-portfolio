@@ -30,15 +30,15 @@ function Project() {
     return (
         <div className='space-y-12'>
             <div className='text-center space-y-4'>
-                <h2 className='text-3xl font-bold text-green-400'>My Projects</h2>
-                <p className='text-green-300 max-w-2xl mx-auto'>
+                <h2 className='text-3xl font-bold text-[var(--text-primary)]'>My Projects</h2>
+                <p className='text-[var(--text-secondary)] max-w-2xl mx-auto'>
                     Here are some of my notable projects, grouped by category. Click on any project to learn more about my contributions and technologies used.
                 </p>
             </div>
             {categoryOrder.map(category => (
                 grouped[category] && (
                     <div key={category} className="space-y-6">
-                        <h3 className="text-2xl font-semibold text-cyan-400 border-b border-green-800 pb-2 mb-2 flex items-center gap-2">
+                        <h3 className="text-2xl font-semibold text-[var(--text-primary)] border-b border-[var(--border-primary)] pb-2 mb-2 flex items-center gap-2">
                             {React.createElement(categoryConfig[category].icon, { className: "w-6 h-6" })}
                             {category}
                         </h3>
